@@ -17,14 +17,14 @@ def main():
     try:
         user_base = float(input("What is the base of the triangle (cm)?: "))
         user_height = float(input("What is the height of the height (cm)?: "))
+
+        if user_base > 0 and user_height > 0:
+            # Calling the area calculating function.
+            calc_area(user_base, user_height)
+        else:
+            print("Invalid input. (Enter positive measurements)")
     except:
         print("Invalid input.")
-
-    if user_base > 0 and user_height > 0:
-        # Calling the area calculating function.
-        calc_area(user_base, user_height)
-    else:
-        print("Invalid input. (Enter positive measurements)")
 
 
 if __name__ == "__main__":
