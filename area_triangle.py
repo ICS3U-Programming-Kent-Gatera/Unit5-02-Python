@@ -21,12 +21,10 @@ def main():
         print("Invalid input.")
 
     if user_base > 0 and user_height > 0:
+        # Calling the area calculating function.
         calc_area(user_base, user_height)
     else:
         print("Invalid input. (Enter positive measurements)")
-
-    # Calling the area calculating function.
-    calc_area(user_base, user_height)
 
 
 if __name__ == "__main__":
